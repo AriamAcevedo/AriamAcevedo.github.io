@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-  
-window.onscroll = function() {myFunction()};
 
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-  </script>
   
   
   
@@ -48,11 +30,7 @@ function myFunction() {
   padding-top: 102px;
 }
     
-    
-    
-    
-   
-    
+ 
     
     
 /* Tooltip container */
@@ -102,11 +80,18 @@ function myFunction() {
   
   <body>
     
-     <div class="header" id="myHeader">
+    <div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div class="header" id="myHeader">
   <h2>My Header</h2>
 </div>
-   <h1 style="background-color:DodgerBlue;" > Programs and research oportunities </h1>
-    
+
+<div class="content">
+  <h3>On Scroll Sticky Header</h3>
+    </div>
     
     
    <h2 style="background-color:DodgerBlue;text-align: center;"> Program 1 </h2>
@@ -131,6 +116,26 @@ function myFunction() {
   
      <h2 style="background-color:DodgerBlue;text-align: center;"> Program 4 </h2>
   <img src="Cornell_University_Logo.png" alt="Flowers in Chania">
+  <script>
+  
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+  </script>
 
 </body>
+
 </html>
